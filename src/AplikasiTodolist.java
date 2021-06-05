@@ -4,7 +4,7 @@ public class AplikasiTodolist {
 
     public static void main(String[] args) {
 
-
+    testShowTodoList();
 
     }
 
@@ -13,7 +13,20 @@ public class AplikasiTodolist {
     * Menampilkan Todo List
     * */
     public static void showTodoList(){
+        for(var i = 0; i < model.length; i++){
+            var todo = model[i];
+            var no = i + 1;
 
+            if(todo != null) {
+                System.out.println((no + ". " + todo));
+            }
+        }
+    }
+
+    public static void testShowTodoList() {
+        model[0] = "Belajar Java Dasar";
+        model[1] = "Studi kasus Java Dasar";
+        showTodoList();
     }
 
     /*
@@ -27,6 +40,19 @@ public class AplikasiTodolist {
     /*
     * Menghapus todo list*/
     public static void removeTodoList(){
+
+    }
+
+
+    public static void viewShowTodoList(){
+
+    }
+
+    public static void viewAddTodoList(){
+
+    }
+
+    public static void viewRemoveTodoList(){
 
     }
 }
